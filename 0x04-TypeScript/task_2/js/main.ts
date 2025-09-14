@@ -52,4 +52,18 @@ return new Director();
 //Examples
 console.log(createEmployee(200)); // Teacher
 console.log(createEmployee(1000)); // Director
-console.log(createEmployee('$500')); // Director
+console.log(createEmployee("$500")); // Director
+
+//String literal types-Subject
+export type Subjects = "Math" | "History";
+
+export function teachClass(todayClass: Subjects): string {
+  if (todayClass === "Math") {
+    return "Teaching Math";
+  }
+  return "Teaching History";
+}
+
+// Test cases
+console.log(teachClass("Math"));    // Teaching Math
+console.log(teachClass("History")); // Teaching History
