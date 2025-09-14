@@ -57,7 +57,7 @@ console.log(createEmployee("$500")); // Director
 //String literal types-Subject
 export type Subjects = "Math" | "History";
 
-export function teachClass(todayClass: Subjects): string {
+export function teachClass(todayClass:Subjects): string {
   if (todayClass === "Math") {
     return "Teaching Math";
   }
